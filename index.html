@@ -6,9 +6,11 @@
   <title>Radio Tanjusha — Vol.2 (07.03.2026)</title>
 
   <meta name="description" content="Radio Tanjusha — Vol.2 • 8 треков • релиз 07.03.2026" />
+  <link rel="canonical" href="https://tanjushak.github.io/vol2/" />
+
   <meta property="og:title" content="Radio Tanjusha — Vol.2" />
   <meta property="og:description" content="Релиз 07.03.2026 • 8 треков • ночной вайб" />
-  <meta property="og:image" content="/cover.png" />
+  <meta property="og:image" content="https://tanjushak.github.io/vol2/cover.png" />
   <meta property="og:type" content="website" />
 
   <style>
@@ -25,7 +27,7 @@
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
       background:
         radial-gradient(1200px 800px at 50% 10%, rgba(215,177,90,.10), transparent 60%),
         radial-gradient(900px 600px at 50% 90%, rgba(240,210,138,.08), transparent 60%),
@@ -37,7 +39,7 @@
       justify-content:center;
       padding:28px 16px;
     }
-    .wrap{width:min(560px, 100%)}
+    .wrap{width:min(560px,100%)}
     .card{
       background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
       border:1px solid var(--line);
@@ -56,32 +58,28 @@
         radial-gradient(9px 9px at 30% 80%, rgba(240,210,138,.12), transparent 60%);
       opacity:.9;
       pointer-events:none;
-      animation: drift 7s ease-in-out infinite alternate;
+      animation:drift 7s ease-in-out infinite alternate;
     }
-    @keyframes drift{ from{transform:translateY(-6px)} to{transform:translateY(10px)} }
+    @keyframes drift{from{transform:translateY(-6px)}to{transform:translateY(10px)}}
 
-    .top{display:flex; gap:16px; align-items:center}
+    .top{display:flex;gap:16px;align-items:center}
     .cover{
-      width:120px; height:120px;
+      width:120px;height:120px;
       border-radius:18px;
       border:1px solid var(--line);
       box-shadow:0 12px 30px rgba(0,0,0,.45);
       object-fit:cover;
       background:#111;
     }
-    h1{margin:0; font-size:24px; letter-spacing:.2px; line-height:1.15}
-    .sub{margin:8px 0 0 0; color:var(--muted); font-size:14px; line-height:1.35}
+    h1{margin:0;font-size:24px;letter-spacing:.2px;line-height:1.15}
+    .sub{margin:8px 0 0 0;color:var(--muted);font-size:14px;line-height:1.35}
     .badge{
-      display:inline-flex; align-items:center; gap:10px;
-      margin-top:10px;
-      padding:10px 12px;
-      border-radius:14px;
+      display:inline-flex;align-items:center;gap:10px;
+      margin-top:10px;padding:10px 12px;border-radius:14px;
       border:1px solid var(--line);
       background:rgba(0,0,0,.25);
       color:var(--gold2);
-      font-weight:900;
-      letter-spacing:.3px;
-      font-size:13px;
+      font-weight:900;letter-spacing:.3px;font-size:13px;
     }
     .dot{
       width:10px;height:10px;border-radius:99px;
@@ -91,16 +89,15 @@
     }
     @keyframes pulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.35);opacity:1}}
 
-    .btns{margin-top:18px; display:flex; flex-direction:column; gap:10px}
+    .btns{margin-top:18px;display:flex;flex-direction:column;gap:10px}
     a.btn{
       text-decoration:none;
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      padding:14px 14px;
-      border-radius:16px;
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:14px 14px;border-radius:16px;
       border:1px solid var(--line);
       color:var(--text);
       background:rgba(255,255,255,.02);
-      transition:transform .08s ease, border-color .15s ease, background .15s ease;
+      transition:transform .08s ease,border-color .15s ease,background .15s ease;
     }
     a.btn:hover{
       transform:translateY(-1px);
@@ -112,10 +109,9 @@
       border-color:rgba(215,177,90,.65);
       font-weight:900;
     }
-    .label{font-size:15px; font-weight:900}
-    .hint{font-size:12px; color:var(--muted); margin-top:12px; text-align:center}
-    .small{font-size:14px; font-weight:900}
-    .disabled{opacity:.7; cursor:not-allowed}
+    .label{font-size:15px;font-weight:900}
+    .hint{font-size:12px;color:var(--muted);margin-top:12px;text-align:center}
+    .tiny{font-size:12px;color:var(--muted);margin-top:8px;text-align:center}
   </style>
 </head>
 <body>
@@ -124,7 +120,7 @@
       <div class="spark"></div>
 
       <div class="top">
-        <img class="cover" src="/cover.png" alt="Radio Tanjusha Vol.2 cover" />
+        <img class="cover" src="cover.png" alt="Radio Tanjusha Vol.2 cover" />
         <div>
           <h1>Radio Tanjusha — Vol.2</h1>
           <p class="sub">8 треков • ночной вайб • релиз <b>07.03.2026</b></p>
@@ -133,9 +129,12 @@
       </div>
 
       <div class="btns">
-        <!-- В ДЕНЬ РЕЛИЗА ЗАМЕНИШЬ НА SMARTLINK / TUNECORE LINKSHARE -->
-        <a class="btn primary" href="https://tanjusha.nl/?utm_source=bio&utm_medium=link&utm_campaign=vol2" target="_blank" rel="noopener">
-          <span class="label">🎧 Listen Vol.2</span><span>→</span>
+        <a class="btn primary" href="https://tanjusha.nl/pages/%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC?utm_source=bio&utm_medium=link&utm_campaign=vol2" target="_blank" rel="noopener">
+          <span class="label">🎧 Listen Vol.2 (до релиза)</span><span>→</span>
+        </a>
+
+        <a class="btn" href="https://www.youtube.com/@Radio_Tanjusha?utm_source=bio&utm_medium=link&utm_campaign=vol2" target="_blank" rel="noopener">
+          <span class="label">🔥 Shorts / Релизы — Radio Tanjusha</span><span>→</span>
         </a>
 
         <a class="btn" href="https://www.youtube.com/@TanjushaShow?utm_source=bio&utm_medium=link&utm_campaign=vol2" target="_blank" rel="noopener">
@@ -145,20 +144,10 @@
         <a class="btn" href="https://tanjusha.nl/pages/tanjusha-show-premium-club-1?utm_source=bio&utm_medium=link&utm_campaign=vol2" target="_blank" rel="noopener">
           <span class="label">💛 Support / Premium Club</span><span>→</span>
         </a>
-
-        <!-- Заглушки до появления store links -->
-        <a class="btn disabled" href="#" onclick="return false;">
-          <span class="label small">▶️ YouTube Music (после релиза)</span><span>—</span>
-        </a>
-        <a class="btn disabled" href="#" onclick="return false;">
-          <span class="label small">🎵 Spotify (после релиза)</span><span>—</span>
-        </a>
-        <a class="btn disabled" href="#" onclick="return false;">
-          <span class="label small">🍎 Apple Music (после релиза)</span><span>—</span>
-        </a>
       </div>
 
       <p class="hint">Сними ролик с этим звуком и отметь меня — репощу лучших.</p>
+      <p class="tiny">7 марта я заменю первую кнопку на SmartLink/магазины — без смены bio-ссылки.</p>
     </div>
   </div>
 </body>
